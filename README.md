@@ -16,7 +16,7 @@ go get -u github.com/go-bindata/go-bindata/...
 * generate bingdata.go
 
 ```code
-go-bindata dalong.js app.js underscore-min.js
+go-bindata dalong.js app.js underscore-min.js shortid.js
 ```
 
 * build
