@@ -12,8 +12,9 @@ var (
 
 func init() {
 	// registry := new(require.Registry)
-	registry :=require.NewRegistryWithLoader(func(path string) ([]byte, error){
-		return  Asset(path)
+	// use custom srcloader
+	registry := require.NewRegistryWithLoader(func(path string) ([]byte, error) {
+		return Asset(path)
 	})
 	myvm = MyVM{
 		jsRuntime: goja.New(),
