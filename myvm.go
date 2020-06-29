@@ -17,8 +17,10 @@ func (vm *MyVM) init() {
 		return fmt.Sprintf("%s-%s", name, password)
 	})
 	// load underscore for global user
-	m, _ :=myrequire.Require("underscore-min.js")
+	m, _ := myrequire.Require("underscore-min.js")
 	vm.jsRuntime.Set("_", m)
+	shortid, _ := myrequire.Require("shortid.js")
+	vm.jsRuntime.Set("shortid", shortid)
 }
 
 // Exec script

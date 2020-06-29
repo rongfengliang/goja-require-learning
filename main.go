@@ -13,6 +13,8 @@ func main() {
 		log.Panic(err)
 	} else {
 		ob := m.ToObject(myvm.jsRuntime)
-		fmt.Print(ob.Get("filteruser").String())
+		fmt.Println(ob.Get("filteruser").String())
+		fmt.Println(ob.Get("id").String())
+		fmt.Println(ob.Get("id2").String())
 	}
 }

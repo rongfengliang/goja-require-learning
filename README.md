@@ -31,3 +31,13 @@ go build
 ```code
 ./goja-learning
 ```
+
+## generate standalone pacakge
+
+> just for test shortid library && better with goja
+
+```code
+cd pacakges
+yarn 
+yarn start
+```
